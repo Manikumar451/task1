@@ -5,7 +5,8 @@ class App extends Component {
   state={count:0}
 
   onChangeCount = (event)=>{
-    if(event.target.value.trim().length===0){
+    if(event.target.value.trim().length===0)
+    {
       this.setState({count:0})
     }
     else{
@@ -13,7 +14,8 @@ class App extends Component {
     }
    
   }
- render(){
+ render()
+ {
   const {count} = this.state
   return (
     <div className="app">
